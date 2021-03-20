@@ -1,0 +1,13 @@
+
+//Product Basket
+Route::post('/basket/product/save', 'BasketController@saveProductBasket');
+Route::post('/basket/product/update/{id}', 'BasketController@updateProductBasket');
+Route::post('/basket/product/delete/{id}', 'BasketController@deleteBasketProduct');
+Route::get('/basket/get/{id}', 'BasketController@getProductBasketByUserId');
+Route::get('/basket/product/get/{id}', 'BasketController@getProductBasketByBasketId');
+
+
+//Orders
+Route::post('/order/save', 'OrderController@saveOrder');
+Route::post('/order/update/{id}', 'OrderController@updateOrder');
+Route::post('/order/status/update/{id}', 'OrderController@updateOrderStatus');
