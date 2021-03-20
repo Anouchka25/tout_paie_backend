@@ -154,7 +154,7 @@ class OrderController extends Controller {
 			//sk_test_49lJgLAdftnvpZr6jCWLGI7V00Kvv4Zlxa
 			//
 			//live key-
-			\Stripe\Stripe::setApiKey("sk_live_el4UuDLrh8V0sjToYKDUFbQ700wuqEOxgS");
+			\Stripe\Stripe::setApiKey("sk_xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx");
 
 			$charge =  \Stripe\Charge::create ([
                 "amount" => $totalTransactionAmount * 100,
